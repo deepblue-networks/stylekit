@@ -1,0 +1,12 @@
+{
+  "name": "@deepblue/stylekit",
+  "version": "1.0.0",
+  "description": "a collection of utilites",
+  "repository": {
+    "type": "git",
+    "url": "git@git.db-n.com:dbn-kickstart/stylekit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
