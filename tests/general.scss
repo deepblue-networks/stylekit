@@ -1,0 +1,51 @@
+@import "../tools/_all";
+
+$color: grey;
+$space: 14px;
+
+html {
+  font-family: Arial;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: $space;
+}
+
+.mixin-rect {
+  @include rect(12px);
+  background-color: $color;
+}
+
+.function-colors {
+  padding: $space;
+  // background, color, headline
+  @include color((#fbf5da, #978c7e, #c12799))
+}
+
+$test-breakpoint-values: (8px, 10px, 12px, 14px, 16px);
+$test-breakpoint-values-errors: ("error small", "medium_for_large", null, "error xlarge");
+
+.function-value {
+  margin: 10px;
+  display: inline-block;
+  &::before {
+    padding: 5px;
+    background-color: #ddd;
+  }
+
+  @each $breakpoint in $breakpoints {
+    &-#{$breakpoint}::before {
+        content: '#{$breakpoint}';
+        font-size: value($test-breakpoint-values, $breakpoint);
+    }
+  }
+
+  &-not-exists::before {
+    $value: value($test-breakpoint-values-errors, large);
+    content: '#{$value}';
+  }
+}
+
+

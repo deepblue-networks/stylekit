@@ -1,0 +1,8 @@
+/**
+ * root marker to update content if polyfill is active
+ **/
+@mixin polyfill-feature($name) {
+  html.no-#{$name} & {
+    @content
+  }
+}

@@ -1,5 +1,6 @@
 @import "./property";
 @import "../../functions/bootstrap/value";
+@import "../../functions/cast/to-to-rem";
 
 /**
  * font-style helpers
@@ -12,18 +13,18 @@
 @mixin font-values($response-values) {
   // font size
   $size: map-get($response-values, size);
-  font-size: rem($size);
+  font-size: to-rem($size);
 
   // line-height
   $line: map-get($response-values, line);
   @if (type-of($line) == number) {
-    line-height: rem($line);
+    line-height: to-rem($line);
   }
 
   //letter-spacing
   $spacing: map-get($response-values, spacing);
   @if (type-of($spacing) == number) {
-    letter-spacing: rem($spacing);
+    letter-spacing: to-rem($spacing);
   }
 }
 

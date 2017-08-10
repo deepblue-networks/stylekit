@@ -1,0 +1,27 @@
+/**
+ * return responsive values
+ * use mobile as fallback
+ */
+$breakpoints: [] !default; // only for error catching
+
+@function value($values, $type: null) {
+  $length: length($values);
+  $return: null;
+  $breakpointLength: length($breakpoints);
+  $breakpointIndex: index($breakpoints, $type);
+
+  @if $breakpointIndex {
+    @for $i from $breakpointIndex to 1 {
+      @if ($length >= $i) {
+        $value: nth($values, $i);
+        @if $value != null {
+         @return $value;
+        }
+      }
+    }
+  } @elseif ($type != null) {
+    @warn "Unknow breakpoint type, #{$type}";
+  }
+
+  @return nth($values, 1); // fallback smallest value
+}

@@ -8,5 +8,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "test:general": "node-sass tests/general.scss tests/general.css",
+    "test:general:w": "node-sass tests/general.scss tests/general.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
 }
