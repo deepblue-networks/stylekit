@@ -47,8 +47,6 @@ $value-breakpoints: () !default; // only for error catching
     @warn "Unknow breakpoint type, #{$type}";
   }
 
-  $a:  map_keys()
-
   @return nth($values, 1); // fallback smallest value
 }
 
