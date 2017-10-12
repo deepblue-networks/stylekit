@@ -1,0 +1,20 @@
+@import "functions/value";
+
+@include test-module('functions/value') {
+  @include test('getter by index') {
+    $breakpoints: (small, medium, large);
+    $values: (5,10,15);
+    // Assert the expected results
+    @include assert-equal(value($values, large, $breakpoints), 15);
+    @include assert-equal(value($values, medium, $breakpoints), 10);
+    @include assert-equal(value($values, small, $breakpoints), 5);
+    @include assert-equal(value($values, null, $breakpoints), 5);
+  }
+
+
+  @include test('getter by map') {
+    $breakpoints: (small, medium, large);
+    $values: (small: 5, medium: 10, large: 15);
+    @include assert-equal(value($values, medium, $breakpoints), 10);
+  }
+}

@@ -1,16 +1,16 @@
 @import "./property";
-@import "../../functions/bootstrap/value";
-@import "../../functions/cast/to-to-rem";
+@import "../functions/value";
+@import "../../functions/cast/to-rem";
 
 /**
  * font-style helpers
  **/
 
-@mixin font-size($values) {
-  @include property(font-size, $values);
+@mixin bootstrap-font-size($values) {
+  @include bootstrap-property(font-size, $values);
 }
 
-@mixin font-values($response-values) {
+@mixin bootstrap-font-values($response-values) {
   // font size
   $size: map-get($response-values, size);
   font-size: to-rem($size);
@@ -31,14 +31,14 @@
 @mixin font-set($styles) {
   // small first
   $small: value($styles);
-  @include font-values($small);
+  @include bootstrap-font-values($small);
 
   // has medium
   @if (length($styles) > 1) {
     $medium: value($styles, md);
     @if ($medium) {
       @include media-breakpoint-up(md) {
-        @include font-values($medium);
+        @include bootstrap-font-values($medium);
       }
     }
 
@@ -48,7 +48,7 @@
 
       @if ($large) {
         @include media-breakpoint-up(lg) {
-          @include font-values($large);
+          @include bootstrap-font-values($large);
         }
       }
     }

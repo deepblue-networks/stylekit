@@ -1,0 +1,20 @@
+@import "bootstrap/functions/value";
+
+@include test-module('bootstrap/functions/value') {
+  @include test('getter with all types') {
+    $values: (small, medium, large);
+    // Assert the expected results
+    @include assert-equal(bootstrap-value($values, lg), large);
+    @include assert-equal(bootstrap-value($values, md), medium);
+    @include assert-equal(bootstrap-value($values, sm), small);
+    @include assert-equal(bootstrap-value($values), small);
+  }
+
+  @include test('getter with fallback') {
+    $values: (small);
+    // Assert the expected results
+    @include assert-equal(bootstrap-value($values, lg), small);
+    @include assert-equal(bootstrap-value($values, md), small);
+    @include assert-equal(bootstrap-value($values), small);
+  }
+}

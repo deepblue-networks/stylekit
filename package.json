@@ -10,10 +10,16 @@
   "author": "",
   "license": "ISC",
   "scripts": {
+    "test": "node-sass specs/all.specs.scss --include-path node_modules --include-path src",
+    "test:w": "nodemon --exec \"npm test\" --watch specs",
     "test:general": "node-sass tests/general.scss tests/general.css",
     "test:general:w": "node-sass tests/general.scss tests/general.css -w"
   },
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "sass-true": "^3.0.1"
+  },
+  "optionalDependencies": {
+    "nodemon": "^1.12.1"
   }
 }

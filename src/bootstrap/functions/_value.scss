@@ -1,7 +1,7 @@
 /**
  * return responsive values, always as fallback use mobile
  */
-@function value($values, $type: null) {
+@function bootstrap-value($values, $type: null) {
   $length: length($values);
 
   @if ($type == lg) {

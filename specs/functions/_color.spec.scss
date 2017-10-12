@@ -1,0 +1,12 @@
+@import "functions/color";
+
+@include test-module('function/color') {
+  @include test('getter') {
+    $m-color: (back, font, head);
+    // Assert the expected results
+    @include assert-equal(color($m-color, headline), head);
+    @include assert-equal(color($m-color, color), font);
+    @include assert-equal(color($m-color, background), back);
+    @include assert-equal(color($m-color, unknow), null);
+  }
+}

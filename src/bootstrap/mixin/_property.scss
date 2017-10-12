@@ -8,7 +8,7 @@
  *
  * @param $name string or list of strings (font-size, margin, aso...)
  */
-@mixin property-value($name, $value, $asset: false) {
+@mixin bootstrap-property-value($name, $value, $asset: false) {
   @if ($value != null) {
     @each $n in $name {
       @if ($asset) {
@@ -23,14 +23,14 @@
 /**
  * create responsive property
  */
-@mixin property($name, $values, $asset: false) {
+@mixin bootstrap-property($name, $values, $asset: false) {
   // small first
-  @include property-value($name, value($values, sm), $asset);
+  @include bootstrap-property-value($name, value($values, sm), $asset);
 
   @include media-breakpoint-up(md) {
-    @include property-value($name, value($values, md), $asset);
+    @include bootstrap-property-value($name, value($values, md), $asset);
   }
   @include media-breakpoint-up(lg) {
-    @include property-value($name, value($values, lg), $asset);
+    @include bootstrap-property-value($name, value($values, lg), $asset);
   }
 }
