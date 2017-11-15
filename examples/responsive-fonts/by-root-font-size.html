@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="by-root-font-size.css">
+</head>
+<body>
+<div>Headline without responsive font size</div>
+<div class="responsive-headline">Chasy bee do bee do bee do pepete baboiii</div>
+<div class="responsive-subline">Chasy bee do bee do bee do pepete baboiii</div>
+<div class="responsive-spaced">Chasy bee do bee do bee do pepete baboiii</div>
+
+  <script>
+      var body = document.getElementsByTagName('body')[0];
+
+      function updateSize() {
+            var rect = body.getBoundingClientRect();
+            var factor = rect.width / 1000;
+            var base = 16;
+            var minValue = 12;
+            var maxValue = 30;
+            var value = factor * base;
+
+            if (value < minValue) {
+              value = minValue;
+            } else if (value > maxValue) {
+              value = maxValue;
+            }
+
+            body.style.fontSize = value + 'px';
+            body.style.lineHeight = value + 'px';
+      }
+
+      window.onresize = updateSize;
+      updateSize();
+  </script>
+</body>
+</html>

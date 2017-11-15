@@ -13,9 +13,12 @@
     "test": "node-sass specs/all.specs.scss --include-path node_modules --include-path src",
     "test:w": "nodemon --exec \"npm test\" --watch specs",
     "test:general": "node-sass tests/general.scss tests/general.css",
-    "test:general:w": "node-sass tests/general.scss tests/general.css -w"
+    "test:general:w": "node-sass tests/general.scss tests/general.css -w",
+    "build-examples": "node-sass examples -o examples"
   },
   "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "foundation-sites": "^6.4.4-rc1",
     "node-sass": "^4.5.3",
     "sass-true": "^3.0.1"
   },

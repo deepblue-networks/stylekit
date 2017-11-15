@@ -1,0 +1,25 @@
+@import "../init-for-foundation";
+
+body {
+  font-size: 20px;
+}
+
+div {
+  margin: 20px auto;
+}
+
+.responsive-headline {
+  font-size: 200%;
+  line-height: 180%;
+}
+
+.responsive-subline {
+  font-size: 160%;
+  line-height: 120%;
+}
+
+.responsive-spaced {
+  font-size: 100%;
+  line-height: 100%;
+  letter-spacing: .4rem;
+}

@@ -1,0 +1,11 @@
+@import "../node_modules/foundation-sites/scss/foundation";
+
+// map foundation with stylekit properties
+$value-breakpoints: map-to-list($breakpoints, keys); // use utility by foundation
+
+@import "../src/__all";
+@import "../src/foundation/__all";
+
+body {
+  font-family: Roboto, Verdana;
+}

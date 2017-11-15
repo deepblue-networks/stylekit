@@ -4,8 +4,17 @@
  *
  * @todo refactor types
  */
-$value-breakpoints: () !default; // only for error catching
+$value-breakpoints: (
+  small,
+  medium,
+  large,
+  xlarge,
+  xxlarge
+) !default; // only for error catching
 
+/**
+ * get breakpoint index
+ */
 @function value-by-index($values, $type: null, $breakpoints: $value-breakpoints) {
   $length: length($values);
   $return: null;

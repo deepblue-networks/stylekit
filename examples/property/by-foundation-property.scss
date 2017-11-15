@@ -1,0 +1,25 @@
+@import "../init-for-foundation";
+
+div {
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.reponsive-property-space {
+  background-color: #eaeaea;
+  @include property(padding-top padding-bottom, 10px 20px 40px);
+}
+
+.reponsive-property-border {
+  border: 1px solid red;
+  @include property(margin-color, 4px 6px 10px);
+}
+
+.reponsive-property-shadow {
+  @include property(box-shadow,
+      (1px 1px 5px #888888)
+      (1px 1px 10px #5f6d55)
+      (1px 1px 30px #6d2e23)
+  );
+}

@@ -1,0 +1,144 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.4.4-rc1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/**
+ * import file for tools
+ **/
+/**
+ * import file for function tools
+ * ! this document is work in progress
+ **/
+/**
+ * import file for functions
+ **/
+/**
+ * get asset by path
+ */
+/**
+ * get asset by path with url flag
+ */
+/**
+ * color setup helper
+ */
+/**
+ * return color values of property, based for color properties
+ * feature implementation for material colors
+ *
+ * example:
+ *  $property: (#00000, #00001, #00002)
+ */
+/**
+ * set property by type of color
+ */
+/**
+ * import all types of color
+ */
+/**
+ * return responsive values
+ * use mobile as fallback
+ *
+ * @todo refactor types
+ */
+/**
+ * get breakpoint index
+ */
+/**
+ * core value function to get value by breakpoint
+ */
+/**
+ * import file for cast functions
+ **/
+/**
+ * cast values or list values to pixel
+ */
+/**
+ * cast value to rem value
+ **/
+/**
+ * index file for math
+ */
+/**
+ * change list values by minus operation
+ */
+/**
+ * change list values by muliply operation
+ */
+/**
+ * import file for mixin tools
+ * use by @include
+ **/
+/**
+ * import file mixins
+ **/
+/**
+ * position
+ **/
+/**
+ * animated
+ */
+/**
+ * add-vertical-align-helper
+ **/
+/**
+ * space-horizontal
+ **/
+/**
+ * space-vertical
+ **/
+/**
+ * rect
+ **/
+/**
+ * clearfix
+ **/
+/**
+ * font-face
+ **/
+/**
+ * root marker to update content if polyfill is active
+ **/
+/**
+ * import file for foundation
+ **/
+/**
+ * import mixins for foundation
+ **/
+/**
+ * responsive properties
+ */
+/**
+ * create responsive property
+ */
+/**
+ * responsive properties
+ */
+/**
+ * create responsive property
+ */
+/**
+ * font-style helpers
+ **/
+body {
+  font-family: Roboto, Verdana; }
+
+body {
+  font-size: 20px; }
+
+div {
+  margin: 20px auto; }
+
+.responsive-headline {
+  font-size: 200%;
+  line-height: 180%; }
+
+.responsive-subline {
+  font-size: 160%;
+  line-height: 120%; }
+
+.responsive-spaced {
+  font-size: 100%;
+  line-height: 100%;
+  letter-spacing: .4rem; }

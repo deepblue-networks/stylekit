@@ -1,0 +1,31 @@
+/**
+ * change list values by minus operation
+ */
+@function minus($list, $modifire) {
+  $result: ();
+  @each $value in $list {
+    @if (type_of($value) == number) {
+      $value: $modifire - $value;
+    }
+
+    $result: append($result, $value);
+  }
+
+  @return $result;
+}
+
+/**
+ * change list values by muliply operation
+ */
+@function multiply($list, $modifire) {
+  $result: ();
+  @each $value in $list {
+    @if (type_of($value) == number) {
+      $value: $modifire * $value;
+    }
+
+    $result: append($result, $value);
+  }
+
+  @return $result;
+}

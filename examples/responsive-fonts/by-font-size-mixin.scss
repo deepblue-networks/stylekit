@@ -1,0 +1,29 @@
+@import "../init-for-foundation";
+
+div {
+  margin: 20px auto;
+}
+
+.responsive-headline {
+  @include font-set((
+    (size: to-rem(30px), line: to-rem(32px)),
+    null,
+    (size: to-rem(52px), line: to-rem(56px)),
+  ));
+}
+
+.responsive-subline {
+  @include font-set((
+    (size: to-rem(16px), line: to-rem(24px)),
+    (size: to-rem(18px), line: to-rem(24px)),
+    (size: to-rem(24px), line: to-rem(32px)),
+  ));
+}
+
+.responsive-spaced {
+  @include font-set((
+    (size: to-rem(12px), line: to-rem(24px), spacing: to-rem(15)),
+    (size: to-rem(14px), line: to-rem(24px), spacing: to-rem(18)),
+    (size: to-rem(16px), line: to-rem(32px), spacing: to-rem(24)),
+  ));
+}
