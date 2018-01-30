@@ -8,7 +8,7 @@
   },
   "keywords": ["scss", "tools", "utilities"],
   "author": "Darius Sobczak<darius.sobczak@db-n.com>",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "test": "node-sass specs/all.specs.scss --include-path node_modules --include-path src",
     "test:w": "nodemon --exec \"npm test\" --watch specs",
