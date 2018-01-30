@@ -144,13 +144,13 @@ div {
 
 .reponsive-property-border {
   border: 1px solid red;
-  margin-color: 4px; }
+  border-width: 4px; }
   @media print, screen and (min-width: 40em) {
     .reponsive-property-border {
-      margin-color: 6px; } }
+      border-width: 6px; } }
   @media print, screen and (min-width: 64em) {
     .reponsive-property-border {
-      margin-color: 10px; } }
+      border-width: 10px; } }
 
 .reponsive-property-shadow {
   box-shadow: 1px 1px 5px #888888; }

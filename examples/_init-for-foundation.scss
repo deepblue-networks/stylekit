@@ -1,5 +1,5 @@
 @import "../node_modules/foundation-sites/scss/foundation";
-
+@import "../node_modules/foundation-sites/scss/util/breakpoint";
 // map foundation with stylekit properties
 $value-breakpoints: map-to-list($breakpoints, keys); // use utility by foundation
 
