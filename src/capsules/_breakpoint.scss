@@ -1,0 +1,54 @@
+/**
+ * simple implemenation of foundation breakpoint mixin
+ *
+ * @type capsules
+ * @info include this capsules if you want to use bootstrap or foundation
+ */
+
+@function get-breakpoint-range($name) {
+  $returnRange: false;
+  $breakpointName: null;
+
+  @if type_of($name) == list {
+    // combination of name and only
+    $breakpointName: nth($name, 1);
+    $returnRange: true;
+  } @else {
+    $breakpointName: $name;
+  }
+
+  @if map_has_key($breakpoints, $breakpointName) == false {
+    @error "Breakpoint not defined";
+  }
+
+  $minValue: map_get($breakpoints, $breakpointName);
+
+  @if $returnRange {
+    // return min max map
+    @warn "not implemented yet";
+    @return $minValue;
+  }
+
+  // return single value
+  @return $minValue;
+}
+
+/**
+ * mixin for breakpoint media query
+ */
+@mixin breakpoint($name) {
+  $breakpointValue: get-breakpoint-range($name);
+
+  @if type_of($breakpointValue) == list {
+    $minValue: map_get($breakpointValue, min);
+    $maxValue: map_get($breakpointValue, max);
+    @media screen and (min-width: #{$minValue}) and (max-width: #{$maxValue}) {
+      @content;
+    }
+  } @else {
+    $minValue: $breakpointValue;
+    @media screen and (min-width: #{$minValue}) {
+      @content;
+    }
+  }
+}

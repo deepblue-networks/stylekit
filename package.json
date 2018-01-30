@@ -1,13 +1,13 @@
 {
   "name": "@deepblue/stylekit",
-  "version": "1.0.1",
-  "description": "a collection of utilites",
+  "version": "1.0.2",
+  "description": "A collection of utilites for sass",
   "repository": {
     "type": "git",
-    "url": "git@git.db-n.com:dbn-kickstart/stylekit.git"
+    "url": "git@github.com:deepblue-networks/stylekit.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["scss", "tools", "utilities"],
+  "author": "Darius Sobczak<darius.sobczak@db-n.com>",
   "license": "ISC",
   "scripts": {
     "test": "node-sass specs/all.specs.scss --include-path node_modules --include-path src",
