@@ -5,7 +5,7 @@
  * @info include this capsules if you want to use bootstrap or foundation
  */
 
-@function get-breakpoint-range($name) {
+@function get-breakpoint-range($name, $breakpoints: $value-breakpoints) {
   $returnRange: false;
   $breakpointName: null;
 

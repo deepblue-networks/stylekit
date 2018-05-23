@@ -6,7 +6,11 @@
     "type": "git",
     "url": "git@github.com:deepblue-networks/stylekit.git"
   },
-  "keywords": ["scss", "tools", "utilities"],
+  "keywords": [
+    "scss",
+    "tools",
+    "utilities"
+  ],
   "author": "Darius Sobczak<darius.sobczak@db-n.com>",
   "license": "MIT",
   "scripts": {
@@ -16,13 +20,14 @@
     "test:general:w": "node-sass tests/general.scss tests/general.css -w",
     "build-examples": "node-sass examples -o examples"
   },
+  "peerDependencies": {
+    "foundation-sites": "^6.0.0",
+    "bootstrap-sass": "^3.0.0"
+  },
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "foundation-sites": "^6.4.4-rc1",
-    "node-sass": "^4.5.3",
-    "sass-true": "^3.0.1"
-  },
-  "optionalDependencies": {
-    "nodemon": "^1.12.1"
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5",
+    "sass-true": "^3.1.0"
   }
 }

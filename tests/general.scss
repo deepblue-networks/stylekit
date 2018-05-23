@@ -1,4 +1,4 @@
-@import "../tools/_all";
+@import "../src/generic";
 
 $color: grey;
 $space: 14px;
@@ -27,6 +27,12 @@ html {
 $test-breakpoint-values: (8px, 10px, 12px, 14px, 16px);
 $test-breakpoint-values-errors: ("error small", "medium_for_large", null, "error xlarge");
 
+$breakpoints: (
+  small: 9px,
+  medium: 12px,
+  large: 14px
+);
+
 .function-value {
   margin: 10px;
   display: inline-block;
@@ -35,7 +41,7 @@ $test-breakpoint-values-errors: ("error small", "medium_for_large", null, "error
     background-color: #ddd;
   }
 
-  @each $breakpoint in $breakpoints {
+  @each $breakpoint in $value-breakpoints {
     &-#{$breakpoint}::before {
         content: '#{$breakpoint}';
         font-size: value($test-breakpoint-values, $breakpoint);
@@ -47,5 +53,4 @@ $test-breakpoint-values-errors: ("error small", "medium_for_large", null, "error
     content: '#{$value}';
   }
 }
-
 
