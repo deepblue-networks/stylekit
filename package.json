@@ -1,6 +1,6 @@
 {
   "name": "@deepblue/stylekit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of utilites for sass",
   "repository": {
     "type": "git",
