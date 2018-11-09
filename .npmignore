@@ -6,7 +6,7 @@
 .gitignore
 .hg
 .npmrc
-npm-debug.log
+*.log
 /node_modules
 /specs
 /tests

@@ -21,7 +21,8 @@
     "test:w": "nodemon --exec \"npm test\" --watch specs",
     "test:general": "node-sass tests/general.scss tests/general.css",
     "test:general:w": "node-sass tests/general.scss tests/general.css -w",
-    "build-examples": "node-sass examples -o examples"
+    "build-examples": "node-sass examples -o examples",
+    "deploy": "npm publish --access public"
   },
   "devDependencies": {
     "foundation-sites": "^6.5.0",
