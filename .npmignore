@@ -3,13 +3,10 @@
 ._*
 .DS_Store
 .git
+.gitignore
 .hg
 .npmrc
-.lock-wscript
-.svn
-.wafpickle-*
-*.tmp.*
-config.gypi
-CVS
 npm-debug.log
-node_modules
+/node_modules
+/specs
+/tests

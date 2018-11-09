@@ -1,7 +1,7 @@
 {
-  "name": "@deepblue/stylekit",
+  "name": "@dareksob/stylekit",
   "version": "1.0.3",
-  "description": "A collection of utilites for sass",
+  "description": "Collection of utilites for sass",
   "repository": {
     "type": "git",
     "url": "git@github.com:deepblue-networks/stylekit.git"
@@ -14,20 +14,20 @@
   "author": "Darius Sobczak<darius.sobczak@db-n.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "vuepress dev",
+    "lint": "prettier -l \"src/**/*[.js|.vue|.scss]\"",
+    "lint:fix": "prettier --write \"src/**/*[.js|.vue|.scss]\"",
     "test": "node-sass specs/all.specs.scss --include-path node_modules --include-path src",
     "test:w": "nodemon --exec \"npm test\" --watch specs",
     "test:general": "node-sass tests/general.scss tests/general.css",
     "test:general:w": "node-sass tests/general.scss tests/general.css -w",
     "build-examples": "node-sass examples -o examples"
   },
-  "peerDependencies": {
-    "foundation-sites": "^6.0.0",
-    "bootstrap-sass": "^3.0.0"
-  },
   "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "node-sass": "^4.9.0",
+    "foundation-sites": "^6.5.0",
+    "node-sass": "^4.10.0",
     "nodemon": "^1.17.5",
-    "sass-true": "^3.1.0"
+    "sass-true": "^3.1.0",
+    "vuepress": "^0.14.4"
   }
 }
