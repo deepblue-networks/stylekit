@@ -15,7 +15,11 @@ $value-breakpoints: (
 /**
  * get breakpoint index
  */
-@function value-by-index($values, $type: null, $breakpoints: $value-breakpoints) {
+@function value-by-index(
+  $values,
+  $type: null,
+  $breakpoints: $value-breakpoints
+) {
   $length: length($values);
   $return: null;
   $breakpointLength: length($breakpoints);
@@ -30,7 +34,7 @@ $value-breakpoints: (
         }
       }
     }
-  } @elseif ($type != null) {
+  } @else if ($type != null) {
     @warn "Unknow breakpoint type, #{$type}";
   }
 
@@ -52,7 +56,7 @@ $value-breakpoints: (
         }
       }
     }
-  } @elseif ($type != null) {
+  } @else if ($type != null) {
     @warn "Unknow breakpoint type, #{$type}";
   }
 
@@ -63,7 +67,7 @@ $value-breakpoints: (
  * core value function to get value by breakpoint
  */
 @function value($values, $type: null, $breakpoints: $value-breakpoints) {
-  @if type-of($values) == 'map' {
+  @if type-of($values) == "map" {
     @return value-by-map($values, $type, $breakpoints);
   }
 
