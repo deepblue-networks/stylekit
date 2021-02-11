@@ -2,7 +2,7 @@
  * color setup helper
  */
 
-$color-headline-selector: '.headline' !default;
+$color-headline-selector: ".headline" !default;
 
 /**
  * return color values of property, based for color properties
@@ -47,12 +47,10 @@ $color-headline-selector: '.headline' !default;
   @if ($color != null) {
     @if ($type == background) {
       background-color: $color;
-    }
-    @else if ($type == color) {
+    } @else if ($type == color) {
       color: $color;
       fill: $color;
-    }
-    @else if ($type == headline) {
+    } @else if ($type == headline) {
       #{$color-headline-selector} {
         color: $color;
       }

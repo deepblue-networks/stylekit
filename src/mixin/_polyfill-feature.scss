@@ -3,6 +3,6 @@
  **/
 @mixin polyfill-feature($name) {
   html.no-#{$name} & {
-    @content
+    @content;
   }
 }

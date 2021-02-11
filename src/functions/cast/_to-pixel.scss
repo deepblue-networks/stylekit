@@ -10,7 +10,6 @@ $pixel-to-rem: 16px !default;
       $list: append($list, $v);
     }
     @return $list;
-
   } @else if (type_of($values) == number) {
     @if unit($values) == px {
       @return $values;
@@ -22,7 +21,6 @@ $pixel-to-rem: 16px !default;
     @if unitless($values) {
       @return $values * 1px;
     }
-
   }
 
   @return $values;

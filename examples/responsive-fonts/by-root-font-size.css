@@ -1,12 +1,15 @@
 /**
- * Foundation for Sites by ZURB
- * Version 6.4.4-rc1
- * foundation.zurb.com
+ * Foundation for Sites
+ * Version 6.6.3
+ * https://get.foundation
  * Licensed under MIT Open Source
  */
 /**
  * import file for tools
  **/
+/**
+ * breakpoints for value property function
+ */
 /**
  * import file for function tools
  * ! this document is work in progress
@@ -122,23 +125,31 @@
  * font-style helpers
  **/
 body {
-  font-family: Roboto, Verdana; }
+  font-family: Roboto, Verdana;
+}
 
 body {
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 div {
-  margin: 20px auto; }
+  margin: 20px auto;
+}
 
 .responsive-headline {
   font-size: 200%;
-  line-height: 180%; }
+  line-height: 180%;
+}
 
 .responsive-subline {
   font-size: 160%;
-  line-height: 120%; }
+  line-height: 120%;
+}
 
 .responsive-spaced {
   font-size: 100%;
   line-height: 100%;
-  letter-spacing: .4rem; }
+  letter-spacing: 0.4rem;
+}
+
+/*# sourceMappingURL=by-root-font-size.css.map */

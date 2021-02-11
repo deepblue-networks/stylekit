@@ -1,9 +1,9 @@
 /**
  * get asset by path
  */
-$asset-path: './' !default;
+$asset-path: "./" !default;
 @function asset($name) {
-  @return '#{$asset-path}#{$name}';
+  @return "#{$asset-path}#{$name}";
 }
 
 /**

@@ -45,17 +45,10 @@ $value-breakpoints: (
   $length: length($values);
   $return: null;
   $breakpointLength: length($breakpoints);
-  $keys: map_keys($breakpoints);
+  $keys: $breakpoints;
 
-  @if map_has_key($breakpoints, $type) {
-    @for $i from $breakpointIndex to 1 {
-      @if ($length >= $i) {
-        $value: nth($values, $i);
-        @if $value != null {
-          @return $value;
-        }
-      }
-    }
+  @if map_has_key($values, $type) {
+    @return map_get($values, $type);
   } @else if ($type != null) {
     @warn "Unknow breakpoint type, #{$type}";
   }

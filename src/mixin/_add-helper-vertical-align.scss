@@ -3,7 +3,7 @@
  **/
 @mixin add-vertical-align-helper($position: before) {
   &::#{$position} {
-    content: '';
+    content: "";
     height: 100%;
     display: inline-block;
     vertical-align: middle;

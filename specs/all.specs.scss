@@ -1,5 +1,4 @@
-@import "../node_modules/sass-true/sass/true";
-@import "../node_modules/sass-true/sass/true/report";
+@use '../node_modules/sass-true' as *;
 
 @import "functions/__all";
 @import "bootstrap/functions/__all";

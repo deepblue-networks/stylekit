@@ -1,12 +1,15 @@
 /**
- * Foundation for Sites by ZURB
- * Version 6.4.4-rc1
- * foundation.zurb.com
+ * Foundation for Sites
+ * Version 6.6.3
+ * https://get.foundation
  * Licensed under MIT Open Source
  */
 /**
  * import file for tools
  **/
+/**
+ * breakpoints for value property function
+ */
 /**
  * import file for function tools
  * ! this document is work in progress
@@ -122,41 +125,60 @@
  * font-style helpers
  **/
 body {
-  font-family: Roboto, Verdana; }
+  font-family: Roboto, Verdana;
+}
 
 div {
   margin: 30px;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+}
 
 .reponsive-property-space {
   background-color: #eaeaea;
   padding-top: 10px;
-  padding-bottom: 10px; }
-  @media print, screen and (min-width: 40em) {
-    .reponsive-property-space {
-      padding-top: 20px;
-      padding-bottom: 20px; } }
-  @media print, screen and (min-width: 64em) {
-    .reponsive-property-space {
-      padding-top: 40px;
-      padding-bottom: 40px; } }
+  padding-bottom: 10px;
+}
+@media print, screen and (min-width: 40em) {
+  .reponsive-property-space {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .reponsive-property-space {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 
 .reponsive-property-border {
   border: 1px solid red;
-  border-width: 4px; }
-  @media print, screen and (min-width: 40em) {
-    .reponsive-property-border {
-      border-width: 6px; } }
-  @media print, screen and (min-width: 64em) {
-    .reponsive-property-border {
-      border-width: 10px; } }
+  border-width: 4px;
+}
+@media print, screen and (min-width: 40em) {
+  .reponsive-property-border {
+    border-width: 6px;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .reponsive-property-border {
+    border-width: 10px;
+  }
+}
 
 .reponsive-property-shadow {
-  box-shadow: 1px 1px 5px #888888; }
-  @media print, screen and (min-width: 40em) {
-    .reponsive-property-shadow {
-      box-shadow: 1px 1px 10px #5f6d55; } }
-  @media print, screen and (min-width: 64em) {
-    .reponsive-property-shadow {
-      box-shadow: 1px 1px 30px #6d2e23; } }
+  box-shadow: 1px 1px 5px #888888;
+}
+@media print, screen and (min-width: 40em) {
+  .reponsive-property-shadow {
+    box-shadow: 1px 1px 10px #5f6d55;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .reponsive-property-shadow {
+    box-shadow: 1px 1px 30px #6d2e23;
+  }
+}
+
+/*# sourceMappingURL=by-foundation-property.css.map */

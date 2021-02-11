@@ -17,18 +17,18 @@
     "dev": "vuepress dev",
     "lint": "prettier -l \"src/**/*[.js|.vue|.scss]\"",
     "lint:fix": "prettier --write \"src/**/*[.js|.vue|.scss]\"",
-    "test": "node-sass specs/all.specs.scss --include-path node_modules --include-path src",
+    "test": "sass specs/all.specs.scss -I ./node_modules -I ./src",
     "test:w": "nodemon --exec \"npm test\" --watch specs",
-    "test:general": "node-sass tests/general.scss tests/general.css",
-    "test:general:w": "node-sass tests/general.scss tests/general.css -w",
-    "build-examples": "node-sass examples -o examples",
+    "test:general": "sass tests/general.scss tests/general.css",
+    "test:general:w": "sass tests/general.scss tests/general.css -w",
+    "build-examples": "sass examples:examples",
     "deploy": "npm publish --access public"
   },
   "devDependencies": {
     "foundation-sites": "^6.5.0",
-    "node-sass": "^4.10.0",
+    "sass": "^1.0.0",
     "nodemon": "^1.17.5",
-    "sass-true": "^3.1.0",
-    "vuepress": "^0.14.4"
+    "sass-true": "^6.1.0",
+    "vuepress": "^1.8.1"
   }
 }

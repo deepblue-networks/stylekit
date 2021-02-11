@@ -1,12 +1,15 @@
 /**
- * Foundation for Sites by ZURB
- * Version 6.4.4-rc1
- * foundation.zurb.com
+ * Foundation for Sites
+ * Version 6.6.3
+ * https://get.foundation
  * Licensed under MIT Open Source
  */
 /**
  * import file for tools
  **/
+/**
+ * breakpoints for value property function
+ */
 /**
  * import file for function tools
  * ! this document is work in progress
@@ -122,46 +125,65 @@
  * font-style helpers
  **/
 body {
-  font-family: Roboto, Verdana; }
+  font-family: Roboto, Verdana;
+}
 
 div {
-  margin: 20px auto; }
+  margin: 20px auto;
+}
 
 .responsive-headline {
   font-size: 1.875rem;
-  line-height: 2rem; }
-  @media print, screen and (min-width: 40em) {
-    .responsive-headline {
-      font-size: 1.875rem;
-      line-height: 2rem; } }
-  @media print, screen and (min-width: 64em) {
-    .responsive-headline {
-      font-size: 3.25rem;
-      line-height: 3.5rem; } }
+  line-height: 2rem;
+}
+@media print, screen and (min-width: 40em) {
+  .responsive-headline {
+    font-size: 1.875rem;
+    line-height: 2rem;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .responsive-headline {
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+  }
+}
 
 .responsive-subline {
   font-size: 1rem;
-  line-height: 1.5rem; }
-  @media print, screen and (min-width: 40em) {
-    .responsive-subline {
-      font-size: 1.125rem;
-      line-height: 1.5rem; } }
-  @media print, screen and (min-width: 64em) {
-    .responsive-subline {
-      font-size: 1.5rem;
-      line-height: 2rem; } }
+  line-height: 1.5rem;
+}
+@media print, screen and (min-width: 40em) {
+  .responsive-subline {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .responsive-subline {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 
 .responsive-spaced {
   font-size: 0.75rem;
   line-height: 1.5rem;
-  letter-spacing: 15; }
-  @media print, screen and (min-width: 40em) {
-    .responsive-spaced {
-      font-size: 0.875rem;
-      line-height: 1.5rem;
-      letter-spacing: 18; } }
-  @media print, screen and (min-width: 64em) {
-    .responsive-spaced {
-      font-size: 1rem;
-      line-height: 2rem;
-      letter-spacing: 24; } }
+  letter-spacing: 15;
+}
+@media print, screen and (min-width: 40em) {
+  .responsive-spaced {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: 18;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .responsive-spaced {
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 24;
+  }
+}
+
+/*# sourceMappingURL=by-font-size-mixin.css.map */
